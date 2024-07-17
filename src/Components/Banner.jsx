@@ -1,3 +1,5 @@
+import "../Style/banner.scss"
+
 function Banner({img, title}){
     return(
         <div className="banner">
@@ -7,4 +9,4 @@ function Banner({img, title}){
     )
 }
 
-export default Banner;
+export default Banner

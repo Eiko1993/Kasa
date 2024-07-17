@@ -1,9 +1,10 @@
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Banner from "../Components/Banner";
+import Collapse from "../Components/Collapse";
 import background from '../Assets/kalen-emsley-Bkci_8qcdvQ-unsplash.png';
 import "../Style/about.scss";
-import Collapse from "../Components/Collapse";
+
 
 function About(){
 
