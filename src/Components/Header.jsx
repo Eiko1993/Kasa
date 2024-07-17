@@ -1,6 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from "../Assets/LOGO.png";
-import "../Style/header.scss";
 
 function Header() {
     const ActiveStyle = { textDecoration: "underline" };

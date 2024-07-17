@@ -8,7 +8,7 @@ import Location from "../Pages/Location";
 const router = createBrowserRouter([
     { path:"/", element:<Home />, errorElement:<Error /> },
     { path: "/about", element: <About />, errorElement:<Error /> },
-    { path: "/location", element: <Location />, errorElement:<Error /> },
+    { path: "/location/:id", element: <Location />, errorElement:<Error /> },
     { path: "*", element: <Error /> }  // toutes les routes non trouvées retounent sur Error
 ]);
 
