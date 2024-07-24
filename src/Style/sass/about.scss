@@ -6,8 +6,19 @@
 
     .about{
         display: flex;
-        color: #FF6060;
         flex-direction: column;
         margin-top: 15px;
+        padding-inline: 100px;
+        margin-bottom: 15px;
+        color: black;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 'Montserrat';
+    
+    }
+    span{
+        font-weight: 700;
+        font-size: 24px;
+        font-family: 'Montserrat';
     }
 }

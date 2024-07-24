@@ -1,0 +1,21 @@
+.error {
+  color: #ff6060;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.error h1 {
+  font-size: 288px;
+}
+.error h4 {
+  font-size: 36px;
+  margin: 30px 0;
+}
+.error a {
+  color: #ff6060;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.error p {
+  padding-top: 50px;
+}/*# sourceMappingURL=error.css.map */
