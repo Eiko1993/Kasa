@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext");
 header {
   height: 68px;
   display: flex;
@@ -5,13 +6,17 @@ header {
   align-items: center;
   flex-direction: row;
 }
-header img {
+header .logo {
   width: 210px;
   height: 68px;
   margin-top: 10px;
+  min-height: 0;
 }
-header img :hover {
+header .logo :hover {
   cursor: pointer;
+}
+header nav {
+  font-family: "Montserrat";
 }
 header nav a {
   display: flex;
@@ -27,7 +32,7 @@ header nav ul {
 }
 header nav li {
   font-weight: 500;
-  font-size: 24;
+  font-size: 24px;
   font-family: "Montserrat";
 }
 header nav li:hover {
@@ -42,7 +47,8 @@ header nav li:hover {
   justify-content: center;
   height: 209px;
   background: black;
-  color: var(--colorWhite);
+  color: white;
+  font-family: "Montserrat";
   font-size: 24px;
 }
 .footer .img_footer {
@@ -52,6 +58,7 @@ header nav li:hover {
   height: 39px;
   width: 122px;
   color: white;
+  min-height: 0;
 }
 .footer .rights {
   height: 46px;
@@ -80,7 +87,7 @@ body {
   margin: 30px 0;
 }
 .error a {
-  color: #ff6060;
+  color: black;
   font-size: 18px;
   text-decoration: underline;
 }
@@ -107,7 +114,7 @@ body {
 .banner h2 {
   position: absolute;
   top: 50px;
-  left: 500px;
+  left: 350px;
   font-weight: 700;
   font-size: 48px;
   font-family: "Montserrat";
@@ -187,7 +194,7 @@ body {
 
 .locations {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   row-gap: 50px;
   -moz-column-gap: 50px;
        column-gap: 50px;
@@ -209,12 +216,12 @@ body {
   padding-bottom: 10px;
   position: relative;
 }
-.location img {
+.location .card-img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
-  height: 340px;
   -o-object-fit: cover;
      object-fit: cover;
+  min-height: 340px;
 }
 .location h3 {
   position: absolute;
@@ -226,4 +233,170 @@ body {
   bottom: 0px;
   color: white;
   font-family: "Montserrat";
+}
+
+.carousel {
+  position: relative;
+  height: 415px;
+  width: 100%;
+  margin-top: 30px;
+}
+.carousel p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-top: 340px;
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+  font-family: "Montserrat";
+}
+.carousel .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 24px #b3b1b1;
+}
+.carousel button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.carousel .arrowleft {
+  position: absolute;
+  color: white;
+  inset: 0;
+  top: 40%;
+  cursor: pointer;
+  left: 0;
+  height: 79px;
+  width: 46px;
+  min-height: 0;
+  border: none;
+  background-color: transparent;
+}
+.carousel .arrowright {
+  position: absolute;
+  color: white;
+  inset: 0;
+  top: 40%;
+  cursor: pointer;
+  left: calc(100% - 50px);
+  height: 79px;
+  width: 46px;
+  min-height: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.location .fiche-location {
+  margin-top: 30px;
+}
+.location .fiche-location .div-description {
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+}
+.location .fiche-location .div-description h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.location .fiche-location .div-description h1 {
+  color: #ff6060;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 36px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+.location .fiche-location .div-description .div-tags {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+.location .fiche-location .div-description .div-tags .tags {
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  padding-bottom: 2px;
+  margin: 10px 20px 0 0;
+  height: 25px;
+  font-size: 14px;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 10px;
+  font-family: "Montserrat";
+}
+.location .div-stars {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  color: #ff6060;
+  right: 0;
+  top: 0;
+}
+.location .div-stars p {
+  text-align: right;
+  font-family: "Montserrat";
+  flex-direction: column;
+  font-size: 18px;
+  width: 93px;
+  height: 52px;
+  align-items: center;
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
+}
+.location .div-stars .host {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-top: 15px;
+  box-shadow: 0px 0px 10px rgb(175, 136, 136);
+  min-height: 0;
+}
+.location .stars {
+  display: flex;
+  font-size: 30px;
+  gap: 10px;
+  text-align: right;
+  justify-content: flex-end;
+  color: #ff6060;
+  position: absolute;
+  right: 0;
+}
+.location .stars .filled {
+  color: #ff6060;
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
+}
+.location .stars .empty {
+  color: #e3e3e3;
+}
+.location .collapseLocation {
+  display: flex;
+  font-family: "Montserrat";
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.location .collapseLocation .collapse_title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.location .collapseLocation .collapse_content {
+  font-weight: 400;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

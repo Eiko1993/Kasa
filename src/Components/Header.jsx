@@ -22,7 +22,7 @@ function Header() {
     return (
         <header>
             <Link to="/">
-                <img src={logo} alt='Logo du site Kasa' />
+                <img src={logo} className='logo' alt='Logo du site Kasa' />
             </Link>
             <nav>
                 <ul>{menuItems.map(menuItem)}</ul>

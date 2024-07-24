@@ -5,10 +5,11 @@ header{
     align-items: center;
     flex-direction: row;
 
-     img{
+     .logo{
         width:210px;
         height:68px;
         margin-top:10px;
+        min-height: 0;
 
         :hover{
             cursor:pointer;
@@ -16,6 +17,7 @@ header{
     }
 
     nav{
+        font-family: 'Montserrat';
         a{
             display: flex;
             color: var(--colorRed);
@@ -32,7 +34,7 @@ header{
 
         li{
             font-weight: 500;
-            font-size: 24;
+            font-size: 24px;
             font-family: 'Montserrat';
         }
     
