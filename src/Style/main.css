@@ -95,6 +95,11 @@ body {
   font-family: "Montserrat";
 }
 
+@media (max-width: 800px) {
+  .about {
+    padding-inline: 0;
+  }
+}
 .banner {
   position: relative;
   margin-top: 30px;
@@ -124,6 +129,18 @@ body {
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 0px;
+    height: 111px;
+    background-position: left;
+    border-radius: 10px;
+  }
+  .banner h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
 .locations {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -142,6 +159,8 @@ body {
 }
 
 .location {
+  background-image: linear-gradient(#FFFFFF 0%, #0A0A0A 0%, #040404 20.5%, #000000 50%);
+  background: transparent;
   border-radius: 10px;
   min-width: 280px;
   width: 100%;
@@ -150,7 +169,7 @@ body {
 }
 .location .card-img {
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 340px;
@@ -167,6 +186,37 @@ body {
   font-family: "Montserrat";
 }
 
+/* Responsive */
+@media (max-width: 926px) {
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    background: #FFF;
+    padding: 0;
+    grid-row-gap: 20px;
+  }
+  .fiche-logement {
+    min-width: 200px;
+    height: 255px;
+  }
+  .fiche-logement img {
+    height: 188px;
+  }
+}
+@media (max-width: 400px) {
+  .fiche-logement {
+    width: 100%;
+  }
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin-top: 20px;
+    padding: 0;
+  }
+}
 .carousel {
   position: relative;
   height: 415px;
@@ -225,6 +275,23 @@ body {
   background-color: transparent;
 }
 
+@media (max-width: 768px) {
+  .carousel {
+    height: 255px;
+  }
+  .carousel .arrowleft {
+    height: 19px;
+    width: 11px;
+  }
+  .carousel .arrowright {
+    height: 19px;
+    width: 11px;
+    left: calc(100% - 20px);
+  }
+  .carousel p {
+    top: 70%;
+  }
+}
 .collapse {
   display: flex;
   flex-direction: column;
@@ -401,4 +468,55 @@ body {
 .location .collapseLocation .collapse_content {
   font-weight: 400;
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .compteur-img {
+    display: none;
+  }
+  .fiche-location {
+    display: block;
+  }
+  .fiche-location .div-description {
+    margin-bottom: 30px;
+  }
+  .fiche-location .div-description .tags {
+    font-size: 10px;
+  }
+  .fiche-location .div-description .div-tags {
+    gap: 10px;
+  }
+  .fiche-location .div-description h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .fiche-location .div-description h1 {
+    font-size: 18px;
+  }
+  .div-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .div-stars .host {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+  }
+  .stars {
+    align-items: center;
+    justify-content: left;
+  }
+  .stars .filled {
+    font-size: 18px;
+  }
+  .stars .empty {
+    font-size: 18px;
+  }
+  .collapse_title {
+    font-size: 13px;
+  }
+  .collapse_content {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */

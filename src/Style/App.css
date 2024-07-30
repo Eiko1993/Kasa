@@ -35,6 +35,21 @@ header nav li:hover {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  header img {
+    height: 45px;
+  }
+  header nav {
+    justify-content: center;
+  }
+  header nav a {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  header nav ul {
+    gap: 10px;
+  }
+}
 .footer {
   margin-top: 10px;
   width: 100%;
@@ -63,11 +78,17 @@ header nav li:hover {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .rights p {
+    font-size: 12px;
+  }
+}
 .error {
   color: #ff6060;
   display: block;
   width: 100%;
   text-align: center;
+  padding-bottom: 50px;
 }
 .error h1 {
   font-size: 288px;
@@ -85,6 +106,17 @@ header nav li:hover {
   padding-top: 50px;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 96px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
 .banner {
   height: 223px;
   margin-top: 30px;

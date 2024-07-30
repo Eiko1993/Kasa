@@ -25,4 +25,17 @@
   font-size: 48px;
   font-family: "Montserrat";
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 0px;
+    height: 111px;
+    background-position: left;
+    border-radius: 10px;
+  }
+  .banner h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }/*# sourceMappingURL=banner.css.map */

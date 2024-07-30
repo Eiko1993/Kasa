@@ -28,3 +28,18 @@
     }
 
 }
+
+
+@media (max-width: 768px){
+    .banner{
+        margin-top: 0px;
+        height: 111px;
+        background-position:left;
+        border-radius: 10px; 
+
+        h2{
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+}

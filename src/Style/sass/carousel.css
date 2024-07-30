@@ -54,4 +54,22 @@
   min-height: 0;
   border: none;
   background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 255px;
+  }
+  .carousel .arrowleft {
+    height: 19px;
+    width: 11px;
+  }
+  .carousel .arrowright {
+    height: 19px;
+    width: 11px;
+    left: calc(100% - 20px);
+  }
+  .carousel p {
+    top: 70%;
+  }
 }/*# sourceMappingURL=carousel.css.map */

@@ -29,3 +29,9 @@
         color: white;
     }
 }
+
+@media(max-width:768px){
+    .rights p{
+        font-size: 12px;
+    }
+}

@@ -58,3 +58,22 @@
         background-color: transparent;
     }
 }
+
+@media(max-width:768px){
+    .carousel{
+        height:255px;
+        .arrowleft{
+            height: 19px;
+            width: 11px;
+        }
+        .arrowright{
+            height: 19px;
+            width: 11px;
+            left: calc(100% - 20px);
+        }
+
+        p{
+            top:70%;
+        }
+    }
+}

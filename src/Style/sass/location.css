@@ -104,4 +104,55 @@
 .location .collapseLocation .collapse_content {
   font-weight: 400;
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .compteur-img {
+    display: none;
+  }
+  .fiche-location {
+    display: block;
+  }
+  .fiche-location .div-description {
+    margin-bottom: 30px;
+  }
+  .fiche-location .div-description .tags {
+    font-size: 10px;
+  }
+  .fiche-location .div-description .div-tags {
+    gap: 10px;
+  }
+  .fiche-location .div-description h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+  .fiche-location .div-description h1 {
+    font-size: 18px;
+  }
+  .div-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .div-stars .host {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+  }
+  .stars {
+    align-items: center;
+    justify-content: left;
+  }
+  .stars .filled {
+    font-size: 18px;
+  }
+  .stars .empty {
+    font-size: 18px;
+  }
+  .collapse_title {
+    font-size: 13px;
+  }
+  .collapse_content {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=location.css.map */
