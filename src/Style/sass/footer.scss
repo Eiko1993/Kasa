@@ -29,5 +29,18 @@
     .rights p{
         margin-top: 10px;
         color: white;
+        font-weight: 500;
+        font-family: 'Montserrat';
     }
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+    .footer{
+        .rights p{
+            font-size: 12px;
+        }
+    }
+
 }

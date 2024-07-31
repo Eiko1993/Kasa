@@ -3,6 +3,8 @@
     display: block;
     width: 100%;
     text-align: center;
+    font-family: 'Montserrat';
+    padding-bottom: 80px;
 
     h1{
         font-size: 288px;
@@ -21,6 +23,22 @@
 
     p{
         padding-top: 50px;
+    }
+
+}
+/* Responsive */
+
+@media(max-width:768px){
+    .error{
+        h1{
+            font-size: 96px;
+        }
+        h4{
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+        }
     }
 
 }

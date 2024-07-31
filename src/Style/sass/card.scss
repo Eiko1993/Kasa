@@ -16,9 +16,9 @@
     }
 }
 
-.location{
-    background-image: linear-gradient(#FFFFFF 0%, #0A0A0A 0% , #040404 20.5%, #000000 50%);
-    background: transparent;
+.place{
+    
+    overflow: hidden;
     border-radius: 10px;
     min-width: 280px;
     width:100%;
@@ -31,16 +31,17 @@
         border-radius: 10px;
         object-fit: cover;
         min-height: 340px;
+        background: linear-gradient(#FFFFFF 0%, #0A0A0A 0% , #040404 20.5%, #000000 50%);
     }
     
     h3{
         position: absolute;
+        width: 35%;
         height:52px;
         font-weight: 700;
         font-size: 18px;
-        overflow: hidden;
         left:20px;
-        bottom: 0px;
+        bottom: 30px;
         color: white;
         font-family: 'Montserrat';
 
@@ -48,35 +49,24 @@
 }
 
 /* Responsive */
-@media (max-width: 926px) {
-    .logements { 
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-    }
-}
 
- @media (max-width: 768px) {
-    .logements {
+ @media(max-width: 768px) {
+    .locations {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
         background: #FFF;
         padding: 0;
         grid-row-gap: 20px;
     }
-    .fiche-logement {
-        min-width: 200px;
-        height: 255px;
+    .place{
+        .card-img{
+            max-height: 255px;
+            min-height: 255px;
+        }
+        h3{
+            font-size: 15px;
+        }
+
     }
-    .fiche-logement img { 
-        height: 188px; 
-    }
+    
 }
 
-@media (max-width: 400px) {
-    .fiche-logement { 
-        width: 100%; 
-    }
-    .logements {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        margin-top: 20px;
-        padding: 0;
-    }
-} 

@@ -23,6 +23,14 @@
     }
 }
 
-@media (max-width: 800px) { 
-    .about { padding-inline: 0; }
+@media (max-width: 768px) { 
+    .about_form { 
+        .about{
+            padding-inline: 0; 
+        }
+        span{
+            font-size: 18px;
+        }
+
+    }
 }

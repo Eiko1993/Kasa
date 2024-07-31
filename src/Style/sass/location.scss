@@ -45,6 +45,7 @@
             color: white;
             border-radius: 10px;
             font-family: 'Montserrat';
+            font-weight: 700;
           }
         }
       }
@@ -119,67 +120,92 @@
       .collapse_content {
         font-weight: 400;
         font-size: 18px;
+        ul{
+          list-style: none;
+        }
       }
     }
   }
 
+  /* Responsive */
+
   @media (max-width:768px){
-    .compteur-img{
-      display: none;
-    }
+ 
+.location{
 
-    .fiche-location{
-      display: block;
+  .compteur-img{
+    display: none;
+  }
 
-        .div-description{
-          margin-bottom: 30px;
+  .fiche-location{
+    display: block;
 
+      .div-description{
+        margin-bottom: 30px;
+
+       
+        
+        .div-tags{
+          gap: 10px;
           .tags {
             font-size: 10px;
-          }
-          
-          .div-tags{
-            gap: 10px;
-          }
-          h4 {
-            font-size: 14px;
-            margin: 0;
-          }
-    
-          h1 {
-            font-size: 18px;
+            height:18px;
+            margin: 10px 3px;
+            border-radius: 5px;
           }
         }
-    }
-
-    .div-stars {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      .host{
-        width: 45px;
-        height: 45px;
-        margin: 0;
-      }
-    }
-
-    .stars{
-      align-items: center;
-      justify-content: left;
-
-      .filled {
-        font-size: 18px;
-      }
+        h4 {
+          font-size: 14px;
+          margin: 0;
+        }
   
-      .empty {
-        font-size: 18px;
+        h1 {
+          font-size: 18px;
+        }
       }
+  }
+
+  .div-stars {
+    display: flex;
+    justify-content: space-between;
+    top: 75px;
+    .host{
+      width: 45px;
+      height: 45px;
+      margin: 0;
     }
 
+    p{
+      font-size: 14px;
+    }
+  }
+
+  .stars{
+    align-items: center;
+    justify-content: left;
+    left: 0;
+    top: 100px;
+
+    .filled {
+      width: 18px;
+      height: 18px;
+    }
+
+    .empty {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .collapseLocation{
+    flex-direction: column;
     .collapse_title{
       font-size: 13px;
     }
     .collapse_content{
       font-size: 13px;
     }
+  }
+}
+
   }

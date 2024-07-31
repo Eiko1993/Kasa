@@ -49,6 +49,9 @@ function Location() {
                 })}
                 <div className="stars">
                     {stars.map((element) => {
+                        // Convertit la notation de la location en entier
+                        // - 'location.rating': Accède à la notation de la location sous forme de chaîne de caractères (par exemple, "4" ou "4.5").
+                        // - 'parseInt': Convertit la notation de la chaîne de caractères en un entier.
                     const starsNumber = parseInt(location.rating);
                     return (<span key={"star-" + element} className={element <= starsNumber ? "filled" : "empty"}>★</span>);
                     })}

@@ -21,8 +21,11 @@
   font-family: "Montserrat";
 }
 
-@media (max-width: 800px) {
-  .about {
+@media (max-width: 768px) {
+  .about_form .about {
     padding-inline: 0;
+  }
+  .about_form span {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=about.css.map */

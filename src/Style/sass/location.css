@@ -43,6 +43,7 @@
   color: white;
   border-radius: 10px;
   font-family: "Montserrat";
+  font-weight: 700;
 }
 .location .div-stars {
   position: absolute;
@@ -105,54 +106,71 @@
   font-weight: 400;
   font-size: 18px;
 }
+.location .collapseLocation .collapse_content ul {
+  list-style: none;
+}
 
+/* Responsive */
 @media (max-width: 768px) {
-  .compteur-img {
+  .location .compteur-img {
     display: none;
   }
-  .fiche-location {
+  .location .fiche-location {
     display: block;
   }
-  .fiche-location .div-description {
+  .location .fiche-location .div-description {
     margin-bottom: 30px;
   }
-  .fiche-location .div-description .tags {
-    font-size: 10px;
-  }
-  .fiche-location .div-description .div-tags {
+  .location .fiche-location .div-description .div-tags {
     gap: 10px;
   }
-  .fiche-location .div-description h4 {
+  .location .fiche-location .div-description .div-tags .tags {
+    font-size: 10px;
+    height: 18px;
+    margin: 10px 3px;
+    border-radius: 5px;
+  }
+  .location .fiche-location .div-description h4 {
     font-size: 14px;
     margin: 0;
   }
-  .fiche-location .div-description h1 {
+  .location .fiche-location .div-description h1 {
     font-size: 18px;
   }
-  .div-stars {
+  .location .div-stars {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    top: 75px;
   }
-  .div-stars .host {
+  .location .div-stars .host {
     width: 45px;
     height: 45px;
     margin: 0;
   }
-  .stars {
+  .location .div-stars p {
+    font-size: 14px;
+  }
+  .location .stars {
     align-items: center;
     justify-content: left;
+    left: 0;
+    top: 100px;
   }
-  .stars .filled {
-    font-size: 18px;
+  .location .stars .filled {
+    width: 18px;
+    height: 18px;
   }
-  .stars .empty {
-    font-size: 18px;
+  .location .stars .empty {
+    width: 18px;
+    height: 18px;
   }
-  .collapse_title {
+  .location .collapseLocation {
+    flex-direction: column;
+  }
+  .location .collapseLocation .collapse_title {
     font-size: 13px;
   }
-  .collapse_content {
+  .location .collapseLocation .collapse_content {
     font-size: 13px;
   }
 }/*# sourceMappingURL=location.css.map */

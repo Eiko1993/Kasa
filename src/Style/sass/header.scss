@@ -47,3 +47,22 @@ header{
 
 
 }
+
+/* Responsive */
+
+@media(max-width: 768px){
+    header{
+        .logo{
+            height:46px;
+            width:145px;
+        }
+        nav{
+            justify-content: center;
+            a{
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+            
+        }
+    }
+}

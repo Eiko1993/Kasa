@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,bold,italic&subset=latin,latin-ext");
 header {
   height: 68px;
   display: flex;
@@ -38,6 +39,20 @@ header nav li:hover {
   cursor: pointer;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  header .logo {
+    height: 46px;
+    width: 145px;
+  }
+  header nav {
+    justify-content: center;
+  }
+  header nav a {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
 .footer {
   margin-top: 10px;
   width: 100%;
@@ -66,8 +81,16 @@ header nav li:hover {
 .footer .rights p {
   margin-top: 10px;
   color: white;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .footer .rights p {
+    font-size: 12px;
+  }
+}
 body {
   margin: 0 50px;
 }
@@ -95,9 +118,12 @@ body {
   font-family: "Montserrat";
 }
 
-@media (max-width: 800px) {
-  .about {
+@media (max-width: 768px) {
+  .about_form .about {
     padding-inline: 0;
+  }
+  .about_form span {
+    font-size: 18px;
   }
 }
 .banner {
@@ -115,6 +141,8 @@ body {
   -o-object-position: center;
      object-position: center;
   border-radius: 25px;
+  background-color: black;
+  filter: brightness(0.5);
 }
 .banner h2 {
   position: absolute;
@@ -126,19 +154,22 @@ body {
   font-weight: 700;
   font-size: 48px;
   font-family: "Montserrat";
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  filter: drop-shadow(0px 0px 4px black);
 }
 
 @media (max-width: 768px) {
   .banner {
     margin-top: 0px;
-    height: 111px;
     background-position: left;
     border-radius: 10px;
+  }
+  .banner img {
+    height: 111px;
   }
   .banner h2 {
     font-size: 24px;
     line-height: 24px;
+    left: 35%;
   }
 }
 .locations {
@@ -158,63 +189,48 @@ body {
   text-decoration: none;
 }
 
-.location {
-  background-image: linear-gradient(#FFFFFF 0%, #0A0A0A 0%, #040404 20.5%, #000000 50%);
-  background: transparent;
+.place {
+  overflow: hidden;
   border-radius: 10px;
   min-width: 280px;
   width: 100%;
   padding-bottom: 10px;
   position: relative;
 }
-.location .card-img {
+.place .card-img {
   width: 100%;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 340px;
+  background: linear-gradient(#FFFFFF 0%, #0A0A0A 0%, #040404 20.5%, #000000 50%);
 }
-.location h3 {
+.place h3 {
   position: absolute;
+  width: 35%;
   height: 52px;
   font-weight: 700;
   font-size: 18px;
-  overflow: hidden;
   left: 20px;
-  bottom: 0px;
+  bottom: 30px;
   color: white;
   font-family: "Montserrat";
 }
 
 /* Responsive */
-@media (max-width: 926px) {
-  .logements {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  }
-}
 @media (max-width: 768px) {
-  .logements {
+  .locations {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     background: #FFF;
     padding: 0;
     grid-row-gap: 20px;
   }
-  .fiche-logement {
-    min-width: 200px;
-    height: 255px;
+  .place .card-img {
+    max-height: 255px;
+    min-height: 255px;
   }
-  .fiche-logement img {
-    height: 188px;
-  }
-}
-@media (max-width: 400px) {
-  .fiche-logement {
-    width: 100%;
-  }
-  .logements {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    margin-top: 20px;
-    padding: 0;
+  .place h3 {
+    font-size: 15px;
   }
 }
 .carousel {
@@ -241,7 +257,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0px 0px 24px #b3b1b1;
 }
 .carousel button {
   border: none;
@@ -275,16 +290,20 @@ body {
   background-color: transparent;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .carousel {
     height: 255px;
   }
   .carousel .arrowleft {
+    top: 50%;
+    left: 10px;
     height: 19px;
     width: 11px;
   }
   .carousel .arrowright {
     height: 19px;
+    top: 50%;
     width: 11px;
     left: calc(100% - 20px);
   }
@@ -333,7 +352,6 @@ body {
   padding: 36px 27px 19px 18px;
   margin: 0;
   text-align: justify;
-  list-style-type: none;
 }
 
 .hidden {
@@ -345,6 +363,8 @@ body {
   display: block;
   width: 100%;
   text-align: center;
+  font-family: "Montserrat";
+  padding-bottom: 80px;
 }
 .error h1 {
   font-size: 288px;
@@ -362,6 +382,18 @@ body {
   padding-top: 50px;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .error h1 {
+    font-size: 96px;
+  }
+  .error h4 {
+    font-size: 18px;
+  }
+  .error p {
+    font-size: 14px;
+  }
+}
 .location {
   display: flex;
   flex-direction: column;
@@ -407,6 +439,7 @@ body {
   color: white;
   border-radius: 10px;
   font-family: "Montserrat";
+  font-weight: 700;
 }
 .location .div-stars {
   position: absolute;
@@ -469,54 +502,71 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
+.location .collapseLocation .collapse_content ul {
+  list-style: none;
+}
 
+/* Responsive */
 @media (max-width: 768px) {
-  .compteur-img {
+  .location .compteur-img {
     display: none;
   }
-  .fiche-location {
+  .location .fiche-location {
     display: block;
   }
-  .fiche-location .div-description {
+  .location .fiche-location .div-description {
     margin-bottom: 30px;
   }
-  .fiche-location .div-description .tags {
-    font-size: 10px;
-  }
-  .fiche-location .div-description .div-tags {
+  .location .fiche-location .div-description .div-tags {
     gap: 10px;
   }
-  .fiche-location .div-description h4 {
+  .location .fiche-location .div-description .div-tags .tags {
+    font-size: 10px;
+    height: 18px;
+    margin: 10px 3px;
+    border-radius: 5px;
+  }
+  .location .fiche-location .div-description h4 {
     font-size: 14px;
     margin: 0;
   }
-  .fiche-location .div-description h1 {
+  .location .fiche-location .div-description h1 {
     font-size: 18px;
   }
-  .div-stars {
+  .location .div-stars {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    top: 75px;
   }
-  .div-stars .host {
+  .location .div-stars .host {
     width: 45px;
     height: 45px;
     margin: 0;
   }
-  .stars {
+  .location .div-stars p {
+    font-size: 14px;
+  }
+  .location .stars {
     align-items: center;
     justify-content: left;
+    left: 0;
+    top: 100px;
   }
-  .stars .filled {
-    font-size: 18px;
+  .location .stars .filled {
+    width: 18px;
+    height: 18px;
   }
-  .stars .empty {
-    font-size: 18px;
+  .location .stars .empty {
+    width: 18px;
+    height: 18px;
   }
-  .collapse_title {
+  .location .collapseLocation {
+    flex-direction: column;
+  }
+  .location .collapseLocation .collapse_title {
     font-size: 13px;
   }
-  .collapse_content {
+  .location .collapseLocation .collapse_content {
     font-size: 13px;
   }
 }/*# sourceMappingURL=main.css.map */

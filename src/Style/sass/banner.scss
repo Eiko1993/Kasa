@@ -11,6 +11,8 @@
         object-fit: cover;
         object-position: center;
         border-radius: 25px;
+        background-color: black;
+        filter: brightness(0.5);
         
     }
 
@@ -24,7 +26,7 @@
         font-weight: 700;
         font-size: 48px;
         font-family: 'Montserrat';
-        text-shadow: 0px 4px 4px 0px #00000040;
+        filter: drop-shadow(0px 0px 4px black);
     }
 
 }
@@ -33,13 +35,16 @@
 @media (max-width: 768px){
     .banner{
         margin-top: 0px;
-        height: 111px;
+        img{
+            height: 111px;
+        }
         background-position:left;
         border-radius: 10px; 
 
         h2{
             font-size: 24px;
             line-height: 24px;
+            left: 35%;
         }
     }
 }

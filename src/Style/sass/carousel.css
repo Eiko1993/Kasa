@@ -22,7 +22,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0px 0px 24px #b3b1b1;
 }
 .carousel button {
   border: none;
@@ -56,16 +55,20 @@
   background-color: transparent;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .carousel {
     height: 255px;
   }
   .carousel .arrowleft {
+    top: 50%;
+    left: 10px;
     height: 19px;
     width: 11px;
   }
   .carousel .arrowright {
     height: 19px;
+    top: 50%;
     width: 11px;
     left: calc(100% - 20px);
   }

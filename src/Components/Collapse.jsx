@@ -24,7 +24,7 @@ function Collapse({title,content}){
                     )}
                 </div>
             </div>
-            {contentVisible && (
+            {contentVisible && ( //Utilise l'opérateur logique && pour afficher le contenu seulement si contentVisible est vrai.
                 <div className='collapse_content'>
                     <ul>{content}</ul>
                 </div>
