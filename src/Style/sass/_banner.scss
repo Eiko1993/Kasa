@@ -11,7 +11,6 @@
         object-fit: cover;
         object-position: center;
         border-radius: 25px;
-        background-color: black;
         filter: brightness(0.5);
         
     }
@@ -32,8 +31,9 @@
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 768px){
     .banner{
+        position: relative;
         margin-top: 0px;
         img{
             height: 111px;
@@ -44,7 +44,10 @@
         h2{
             font-size: 24px;
             line-height: 24px;
-            left: 35%;
+            text-align: left;
+            left: 20px;
+            transform: translate(0, -50%);
+            width: 50%;
         }
     }
 }
