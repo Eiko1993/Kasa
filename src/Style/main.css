@@ -40,7 +40,7 @@ header nav li:hover {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   header .logo {
     height: 46px;
     width: 145px;
@@ -86,7 +86,7 @@ header nav li:hover {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .footer .rights p {
     font-size: 12px;
   }
@@ -118,7 +118,7 @@ body {
   font-family: "Montserrat";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .about_form .about {
     padding-inline: 0;
   }
@@ -157,7 +157,7 @@ body {
   filter: drop-shadow(0px 0px 4px black);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .banner {
     margin-top: 0px;
     background-position: left;
@@ -196,6 +196,7 @@ body {
   width: 100%;
   padding-bottom: 10px;
   position: relative;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #0A0A0A 0%, #040404 20.5%, #000000 50%);
 }
 .place .card-img {
   width: 100%;
@@ -203,7 +204,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 340px;
-  background: linear-gradient(#FFFFFF 0%, #0A0A0A 0%, #040404 20.5%, #000000 50%);
 }
 .place h3 {
   position: absolute;
@@ -218,7 +218,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .locations {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     background: #FFF;
@@ -291,7 +291,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .carousel {
     height: 255px;
   }
@@ -383,7 +383,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .error h1 {
     font-size: 96px;
   }
@@ -507,12 +507,12 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .location .compteur-img {
     display: none;
   }
   .location .fiche-location {
-    display: block;
+    display: flex;
   }
   .location .fiche-location .div-description {
     margin-bottom: 30px;
@@ -544,7 +544,7 @@ body {
     margin: 0;
   }
   .location .div-stars p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .location .stars {
     align-items: center;

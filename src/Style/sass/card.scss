@@ -24,14 +24,14 @@
     width:100%;
     padding-bottom: 10px;
     position: relative;
-
+    background: linear-gradient(to bottom, #FFFFFF 0%, #0A0A0A 0% , #040404 20.5%, #000000 50%);
     .card-img{
 
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
         min-height: 340px;
-        background: linear-gradient(#FFFFFF 0%, #0A0A0A 0% , #040404 20.5%, #000000 50%);
+        
     }
     
     h3{

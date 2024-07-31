@@ -116,7 +116,7 @@
     display: none;
   }
   .location .fiche-location {
-    display: block;
+    display: flex;
   }
   .location .fiche-location .div-description {
     margin-bottom: 30px;
@@ -148,7 +148,7 @@
     margin: 0;
   }
   .location .div-stars p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .location .stars {
     align-items: center;
