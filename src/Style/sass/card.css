@@ -44,7 +44,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .locations {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     background: #FFF;
