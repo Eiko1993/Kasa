@@ -134,7 +134,8 @@
   @media (max-width:768px){
  
 .location{
-
+  margin: 0;
+  max-width: 375px;
   .compteur-img{
     display: none;
   }
@@ -170,7 +171,7 @@
   .div-stars {
     display: flex;
     justify-content: space-between;
-    top: 75px;
+    top: 83px;
     .host{
       width: 45px;
       height: 45px;

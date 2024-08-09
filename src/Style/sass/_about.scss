@@ -27,8 +27,11 @@
 
 @media (max-width: 768px) { 
     .about_form { 
+        margin: 0;
+        max-width: 375px;
         .about{
             padding-inline: 0; 
+            font-size: 13px;
         }
         span{
             font-size: 18px;
