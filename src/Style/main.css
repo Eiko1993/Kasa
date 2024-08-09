@@ -93,11 +93,16 @@ header nav li:hover {
 }
 body {
   margin: 0 50px;
+  max-width: 1240px;
+}
+body .main {
+  margin: auto;
 }
 
 @media (max-width: 768px) {
   body {
     margin: 0 20px;
+    max-width: 768px;
   }
 }
 .about_form {
