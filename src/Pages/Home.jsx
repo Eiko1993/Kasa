@@ -6,7 +6,7 @@ import background from "../Assets/bg-home.png";
 
 function Home(){
     return(
-        <div>
+        <div className="main">
         <Header />
         <Banner img={background} title="Chez vous, partout et ailleurs"/>
         <Card />
