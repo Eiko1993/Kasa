@@ -95,6 +95,11 @@ body {
   margin: 0 50px;
 }
 
+@media (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
+}
 .about_form {
   display: flex;
   width: 100%;
@@ -177,7 +182,7 @@ body {
 }
 .locations {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 50px;
   -moz-column-gap: 50px;
        column-gap: 50px;
@@ -205,6 +210,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 340px;
+  max-height: 1240px;
 }
 .place h3 {
   z-index: 1;
