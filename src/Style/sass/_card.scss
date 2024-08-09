@@ -1,6 +1,6 @@
 .locations{
     display: grid;
-    grid-template-columns: repeat(3, minmax(340px,1240px));
+    grid-template-columns: repeat(auto-fill, 340px);
     row-gap: 50px;
     column-gap: 50px;
     justify-content: center;
