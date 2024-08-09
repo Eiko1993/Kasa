@@ -110,6 +110,8 @@ body {
   width: 100%;
   height: 100%;
   flex-direction: column;
+  margin: auto;
+  max-width: 1240px;
 }
 .about_form .about {
   display: flex;
@@ -421,6 +423,8 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
+  margin: auto;
+  max-width: 1240px;
 }
 .location .fiche-location {
   margin-top: 30px;
