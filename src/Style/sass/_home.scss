@@ -6,19 +6,5 @@ body{
     body{
         margin: 0 20px;
     }
-
-
     
-}
-
-.main{
-    margin: auto;
-    max-width: 1240px;
-}
-
-@media (max-width: 768px) {
-    .main{
-        margin: 0 20px;
-        max-width: 375px;
-    }
 }
